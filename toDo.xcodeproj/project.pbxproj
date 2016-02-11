@@ -21,6 +21,7 @@
 		D2E44A111C6B3E210069D81B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E44A0F1C6B3E060069D81B /* CoreData.framework */; };
 		D2E44A141C6C91E40069D81B /* ToDoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E44A121C6C91E40069D81B /* ToDoEntity+CoreDataProperties.swift */; };
 		D2E44A151C6C91E40069D81B /* ToDoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E44A131C6C91E40069D81B /* ToDoEntity.swift */; };
+		D2E44A171C6C94FB0069D81B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E44A161C6C94FB0069D81B /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D2E44A0F1C6B3E060069D81B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D2E44A121C6C91E40069D81B /* ToDoEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToDoEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D2E44A131C6C91E40069D81B /* ToDoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoEntity.swift; sourceTree = "<group>"; };
+		D2E44A161C6C94FB0069D81B /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				D2507D1E1C689DAF00FAA917 /* Protocols */,
 				D2507D201C689DCC00FAA917 /* Supporting Files */,
 				D2507D1F1C689DB900FAA917 /* ViewControllers */,
+				D2E44A161C6C94FB0069D81B /* Helper.swift */,
 			);
 			path = toDo;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E44A171C6C94FB0069D81B /* Helper.swift in Sources */,
 				D2507D161C68984500FAA917 /* DPHandlesMOC.swift in Sources */,
 				D2507D181C68993100FAA917 /* DPHandlesToDoEntity.swift in Sources */,
 				D2E44A151C6C91E40069D81B /* ToDoEntity.swift in Sources */,

@@ -141,7 +141,7 @@ class MyTableViewController:
         
         fetchRequest.predicate = NSPredicate(format: "TRUEPREDICATE")
         
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "toDoTitle", ascending: true)]
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "toDoPriority", ascending: false)]
 
         
         

@@ -13,6 +13,33 @@ class DetailsViewController: UIViewController, DPHandlesMOC, DPHandlesToDoEntity
 
     var wasDeleted = false
     
+    
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    @IBAction func indexChanged(sender: UISegmentedControl) {
+        //implement when index change, change priority in Label
+        saveMyToDoEntity()
+        localToDoEntity!.toDoPriority = sender.selectedSegmentIndex
+        
+        let priority = Priority(rawValue: sender.selectedSegmentIndex)!
+        switch priority {
+        case .None:
+            print("What A Great Day \(priority)!")
+            break
+        case .Low:
+            print("What A Great Day \(priority)!")
+            break
+        case .Medium:
+            print("What A Great Day \(priority)!")
+
+            break
+        case .High:
+            print("What A Great Day \(priority)!")
+
+            break
+        }
+        
+    }
     @IBAction func trashTapped(sender: AnyObject) {
         context.deleteObject(self.localToDoEntity!)
         saveMyToDoEntity()
@@ -61,6 +88,7 @@ class DetailsViewController: UIViewController, DPHandlesMOC, DPHandlesToDoEntity
         if (localToDoEntity != nil) {
             titleField.text = localToDoEntity!.toDoTitle
             detailsField.text = localToDoEntity!.toDoDetails
+            segmentedControl.selectedSegmentIndex = (localToDoEntity!.toDoPriority?.integerValue)!
             
         }
         
