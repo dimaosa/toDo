@@ -19,21 +19,7 @@ class DetailsViewController: UIViewController, DPHandlesMOC, DPHandlesToDoEntity
         wasDeleted = true
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
-    
-    @IBAction func dueDateValueChanged(sender: AnyObject) {
-        print("In dueDateValueChanged DetailsViewController")
-        localToDoEntity?.toDoDueDate = dueDateField.date
-        saveMyToDoEntity()
-        print("Out dueDateValueChanged DetailsViewController")
 
-    }
-    @IBAction func DueDateEdited(sender: AnyObject) {
-        print("In DueDateEdited DetailsViewController")
-        localToDoEntity?.toDoDueDate = dueDateField.date
-        saveMyToDoEntity()
-        print("Out DueDateEdited DetailsViewController")
-
-    }
     @IBAction func TitleFieldEdited(sender: UITextField) {
         print("In TitleFieldEdited DetailsViewController")
         localToDoEntity?.toDoTitle = titleField.text
@@ -76,9 +62,6 @@ class DetailsViewController: UIViewController, DPHandlesMOC, DPHandlesToDoEntity
             titleField.text = localToDoEntity!.toDoTitle
             detailsField.text = localToDoEntity!.toDoDetails
             
-            if let dueDate = localToDoEntity!.toDoDueDate {
-                dueDateField.setDate(dueDate, animated: true)
-            }
         }
         
         print("Out viewWillAppear DetailsViewController")
@@ -96,7 +79,6 @@ class DetailsViewController: UIViewController, DPHandlesMOC, DPHandlesToDoEntity
 
         super.viewWillDisappear(animated)
         if wasDeleted == false {
-            localToDoEntity?.toDoDueDate = dueDateField.date
             localToDoEntity?.toDoTitle = titleField.text
             localToDoEntity?.toDoDetails = detailsField.text
             saveMyToDoEntity()

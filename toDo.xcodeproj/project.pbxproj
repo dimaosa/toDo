@@ -17,10 +17,10 @@
 		D2507D141C6890CA00FAA917 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2507D131C6890CA00FAA917 /* DetailsViewController.swift */; };
 		D2507D161C68984500FAA917 /* DPHandlesMOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2507D151C68984500FAA917 /* DPHandlesMOC.swift */; };
 		D2507D181C68993100FAA917 /* DPHandlesToDoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2507D171C68993100FAA917 /* DPHandlesToDoEntity.swift */; };
-		D2507D1B1C689D8B00FAA917 /* ToDoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2507D191C689D8B00FAA917 /* ToDoEntity+CoreDataProperties.swift */; };
-		D2507D1C1C689D8B00FAA917 /* ToDoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2507D1A1C689D8B00FAA917 /* ToDoEntity.swift */; };
 		D2507D221C689E8900FAA917 /* MyUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2507D211C689E8900FAA917 /* MyUITableViewCell.swift */; };
 		D2E44A111C6B3E210069D81B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E44A0F1C6B3E060069D81B /* CoreData.framework */; };
+		D2E44A141C6C91E40069D81B /* ToDoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E44A121C6C91E40069D81B /* ToDoEntity+CoreDataProperties.swift */; };
+		D2E44A151C6C91E40069D81B /* ToDoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E44A131C6C91E40069D81B /* ToDoEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +36,10 @@
 		D2507D131C6890CA00FAA917 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		D2507D151C68984500FAA917 /* DPHandlesMOC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPHandlesMOC.swift; sourceTree = "<group>"; };
 		D2507D171C68993100FAA917 /* DPHandlesToDoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPHandlesToDoEntity.swift; sourceTree = "<group>"; };
-		D2507D191C689D8B00FAA917 /* ToDoEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ToDoEntity+CoreDataProperties.swift"; path = "../ToDoEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D2507D1A1C689D8B00FAA917 /* ToDoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoEntity.swift; path = ../ToDoEntity.swift; sourceTree = "<group>"; };
 		D2507D211C689E8900FAA917 /* MyUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUITableViewCell.swift; sourceTree = "<group>"; };
 		D2E44A0F1C6B3E060069D81B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D2E44A121C6C91E40069D81B /* ToDoEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToDoEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D2E44A131C6C91E40069D81B /* ToDoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 		D2507D1D1C689D9C00FAA917 /* Entites */ = {
 			isa = PBXGroup;
 			children = (
-				D2507D191C689D8B00FAA917 /* ToDoEntity+CoreDataProperties.swift */,
-				D2507D1A1C689D8B00FAA917 /* ToDoEntity.swift */,
+				D2E44A121C6C91E40069D81B /* ToDoEntity+CoreDataProperties.swift */,
+				D2E44A131C6C91E40069D81B /* ToDoEntity.swift */,
 			);
 			name = Entites;
 			sourceTree = "<group>";
@@ -197,14 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2507D161C68984500FAA917 /* DPHandlesMOC.swift in Sources */,
-				D2507D1C1C689D8B00FAA917 /* ToDoEntity.swift in Sources */,
 				D2507D181C68993100FAA917 /* DPHandlesToDoEntity.swift in Sources */,
+				D2E44A151C6C91E40069D81B /* ToDoEntity.swift in Sources */,
 				D2507D101C688F1200FAA917 /* MyUINavigationController.swift in Sources */,
 				D2507CFB1C688ED600FAA917 /* AppDelegate.swift in Sources */,
 				D2507D121C6890B600FAA917 /* MyTableViewController.swift in Sources */,
 				D2507D031C688ED600FAA917 /* toDo.xcdatamodeld in Sources */,
-				D2507D1B1C689D8B00FAA917 /* ToDoEntity+CoreDataProperties.swift in Sources */,
 				D2507D141C6890CA00FAA917 /* DetailsViewController.swift in Sources */,
+				D2E44A141C6C91E40069D81B /* ToDoEntity+CoreDataProperties.swift in Sources */,
 				D2507D221C689E8900FAA917 /* MyUITableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

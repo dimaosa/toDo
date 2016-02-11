@@ -2,7 +2,7 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
     <entity name="ToDoEntity" representedClassName=".ToDoEntity" syncable="YES">
         <attribute name="toDoDetails" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="toDoDueDate" optional="YES" attributeType="Date" minDateTimeInterval="476610840" syncable="YES"/>
+        <attribute name="toDoPriority" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="toDoTitle" attributeType="String" minValueString="1" syncable="YES"/>
     </entity>
     <elements>
